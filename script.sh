@@ -1,0 +1,14 @@
+#!/bin/bash
+if python3 checking.py == 'CNN'
+then
+if sudo docker ps -a | grep cnn_os
+then 
+sudo docker rm -f cnn_os
+sudo docker run -dit -v /var/lib/jenkins/workspace/github_pull:/mlops --name cnn_os mlopsimage:v1
+else
+sudo docker run -dit -v /var/lib/jenkins/workspace/github_pull:/mlops --name cnn_os mlopsimage:v1
+fi
+fi
+
+sudo docker exec cnn_os  python3 /mlops/maincode.py
+
