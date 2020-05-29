@@ -162,7 +162,7 @@ print ('Test accuracy:' , scores[1])
 a=scores[1]*100.00
 
 
-f = open("/project/accuracy_check.txt","w+")
+f = open("accuracy_check.txt","w+")
 f.write(str(a))
 f.close()
 os.system("mv /accuracy_check.txt /project")
