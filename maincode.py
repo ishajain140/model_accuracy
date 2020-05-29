@@ -9,6 +9,7 @@ Original file is located at
 import keras
 from keras.datasets import mnist
 import numpy as np
+import os
 
 #loading the dataset
 dataset = mnist.load_data('mymnist.db')
