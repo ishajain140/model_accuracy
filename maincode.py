@@ -165,4 +165,4 @@ a=scores[1]*100.00
 f = open("accuracy_check.txt","w+")
 f.write(str(a))
 f.close()
-os.system("mv /accuracy_check.txt /project")
+os.system("mv /accuracy_check.txt /mlops")
