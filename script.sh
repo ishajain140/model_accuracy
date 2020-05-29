@@ -10,5 +10,6 @@ sudo docker run -dit -v /var/lib/jenkins/workspace/github_pull:/mlops --name cnn
 fi
 fi
 
+sudo docker rm -f /mlops/accuracy_check.txt
 sudo docker exec cnn_os  python3 /mlops/maincode.py
 
