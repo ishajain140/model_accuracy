@@ -154,7 +154,7 @@ model.fit(
     callbacks=callbacks,
     shuffle=True,
     verbose=1)
-os.system("mv /mnist.h5 /mlops)
+
 
 scores= model.evaluate(x_test2, y_test2, verbose=1)
 print ('Test Loss:' , scores[0])
@@ -165,4 +165,4 @@ a=scores[1]*100.00
 f = open("accuracy_check.txt","w+")
 f.write(str(a))
 f.close()
-os.system("mv /accuracy_check.txt /home/isha/mlops/project")
+
