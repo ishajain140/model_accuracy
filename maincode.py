@@ -154,7 +154,7 @@ model.fit(
     callbacks=callbacks,
     shuffle=True,
     verbose=1)
-os.system("mv /mnist.h5 /isha")
+os.system("mv /mnist.h5 /mlops)
 
 scores= model.evaluate(x_test2, y_test2, verbose=1)
 print ('Test Loss:' , scores[0])
