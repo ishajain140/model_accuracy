@@ -1,5 +1,5 @@
 #!/bin/bash
-if python3 checking.py == 'CNN'
+if python3 /home/isha/mlops/project/checking.py == 'CNN'
 then
 if sudo docker ps -a | grep cnn_os
 then 
