@@ -160,7 +160,7 @@ scores= model.evaluate(x_test2, y_test2, verbose=1)
 print ('Test Loss:' , scores[0])
 print ('Test accuracy:' , scores[1])
 a=scores[1]*100.00
-f = open("accuracy_check.txt","w+")
+f = open("/mlops/accuracy_check.txt","w+")
 f.write(str(a))
 f.close()
 
