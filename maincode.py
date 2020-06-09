@@ -113,8 +113,11 @@ def make_model3():
 
 
 
-n=1
-t = n
+N=1
+f = open("/mlops/variable.txt","w+")
+f.write(str(N))
+f.close()
+t=N
 if t==1:
     model = make_model1()
 if t==2:
