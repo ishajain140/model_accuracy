@@ -57,7 +57,6 @@ def make_model1():
 
 
 def make_model2():
-    
     model = Sequential()
     model.add(Conv2D(16, (3, 3), padding='same', activation='relu',
               input_shape=(28, 28, 1)))
