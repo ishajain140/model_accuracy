@@ -124,7 +124,6 @@ if t==2:
     model=make_model2()
 if t==3:
     model=make_model3()
-
 model.compile(loss = 'categorical_crossentropy',
               optimizer = 'Adam',
               metrics = ['accuracy'])
