@@ -51,7 +51,6 @@ def make_model1():
   model.add(Flatten())
   model.add(Dense(32, input_shape=(256, )))
   model.add(Dense(NUM_CLASSES))
-    
   model.add(Activation('softmax'))
   return model
 
@@ -77,7 +76,6 @@ def make_model2():
     model.add(Flatten())
     model.add(Dense(256, input_shape=(256, )))
     model.add(Dense(NUM_CLASSES))
-    
     model.add(Activation('softmax'))
     return model
 
@@ -105,7 +103,6 @@ def make_model3():
     model.add(Flatten())
     model.add(Dense(256, input_shape=(256, )))
     model.add(Dense(NUM_CLASSES))
-    
     model.add(Activation('softmax'))
     return model
 

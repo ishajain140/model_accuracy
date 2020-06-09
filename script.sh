@@ -10,6 +10,7 @@ sudo docker run -dit -v /home/isha/mlops/project:/mlops --name cnn_os mlopsimage
 fi
 fi
 
+sudo rm -f /home/isha/mlops/project/variable.txt
 sudo rm -f /home/isha/mlops/project/accuracy_check.txt
 sudo docker exec cnn_os  python3 /mlops/maincode.py
 
