@@ -143,7 +143,7 @@ earlystop = EarlyStopping(monitor = 'val_loss',
 callbacks = [earlystop, checkpoint]
 
 BATCH_SIZE = 32
-EPOCHS = 1
+EPOCHS = 2
 model.fit(
     x_train2, y_train2,  # prepared data
     batch_size=BATCH_SIZE,
